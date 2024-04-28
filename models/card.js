@@ -1,4 +1,4 @@
-const client = require('../dbconnect');
+const { client } = require('../dbconnect');
 
 exports.getProjects = (callback) => {
     try {

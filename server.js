@@ -22,7 +22,8 @@ const port = process.env.port || 8080;
 
 //adding socket test
 io.on('connection', (socket) => {
-    console.log('a user connected'); socket.on('disconnect', () => {
+    console.log('a user connected'); 
+    socket.on('disconnect', () => {
         console.log('user disconnected');
     });
 

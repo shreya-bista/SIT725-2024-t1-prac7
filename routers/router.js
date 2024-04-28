@@ -9,4 +9,5 @@ router.post('/', function (req, res) {
 router.get('/', (req, res) => {
     cardController.getProjects(req, res);
 });
+
 module.exports = router;
